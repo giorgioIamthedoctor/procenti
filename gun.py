@@ -61,7 +61,7 @@ class gun():
     self.f2_power = 10
     self.f2_on = 0
     self.an = 1
-    #self.id = canv.create_line(20,450,50,420,width=7) # FIXME: don't know how to set it...
+    self.id = canv.create_line(20,450,50,420,width=7) # FIXME: don't know how to set it...
          
     def fire2_start(self,event):
         self.f2_on = 1
@@ -107,9 +107,9 @@ class target():
     self.points = 0
     self.live = 1
     # FIXME: don't work!!! How to call this functions when object is created?
-    #self.id = canv.create_oval(0,0,0,0)
-    #self.id_points = canv.create_text(30,30,text = self.points,font = '28')
-    #self.new_target()
+    self.id = canv.create_oval(0,0,0,0)
+    self.id_points = canv.create_text(30,30,text = self.points,font = '28')
+    self.new_target()
          
     def new_target(self):
         """ Инициализация новой цели. """
